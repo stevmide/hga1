@@ -138,26 +138,25 @@ const HomeHero: FC = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "His Grace Academy has an inclusive educational program.  All children can learn and therefore should have the opportunity to benefit from a diverse educational experience."
+                    'His Grace Academy has an inclusive educational program.  All children can learn and therefore should have the opportunity to benefit from a diverse educational experience.'
                   }
                 </Typography>
               </Box>
               <Box sx={{ '& button': { mr: 2 } }}>
                 <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="contained">
-                    Get Started
+                    Admission
                   </StyledButton>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>
-                    Watch Video
+                  <StyledButton color="primary" size="large" variant="outlined">
+                    Schedule a tour
                   </StyledButton>
                 </ScrollLink>
               </Box>
             </Box>
           </Grid>
           <Grid item xs={12} md={5} sx={{ position: 'relative' }}>
-            
             <Box
               sx={{
                 position: 'absolute',
@@ -194,10 +193,10 @@ const HomeHero: FC = () => {
                   component="h6"
                   sx={{ color: 'secondary.main', fontSize: '1.1rem', fontWeight: 700, mb: 0.5 }}
                 >
-                  Certificate
+                  Child Care
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: 'text.secondary', lineHeight: 1.3 }}>
-                  There are certificates for all courses.
+                  Verified Instructors
                 </Typography>
               </Box>
             </Box>

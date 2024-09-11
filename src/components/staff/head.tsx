@@ -59,23 +59,23 @@ const StaffHead: FC = () => {
                 }}
               >
                 <Typography variant="h5" sx={{ mb: 1 }}>
-                  Lorem ipsum dolor
+                  Child Care
                 </Typography>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    UI/UI Design
+                    Gift teaching staff
                   </Typography>
                   <BorderLinearProgress variant="determinate" color="inherit" value={85} order={1} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    Mobile Development
+                    Small classes
                   </Typography>
                   <BorderLinearProgress variant="determinate" color="inherit" value={40} order={2} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    Web Development
+                    Verified Instructors
                   </Typography>
                   <BorderLinearProgress variant="determinate" color="inherit" value={50} order={3} />
                 </Box>
@@ -104,9 +104,9 @@ const StaffHead: FC = () => {
                     flexDirection: 'column',
                   }}
                 >
-                  <Typography sx={{ fontWeight: 600, lineHeight: 1 }}>Lorem ipsum</Typography>
+                  <Typography sx={{ fontWeight: 600, lineHeight: 1 }}>Our Staff</Typography>
                   <Typography variant="subtitle1" sx={{ mb: 1, color: 'text.disabled' }}>
-                    Lorem ipsum
+                    Certified Instructors
                   </Typography>
                   <Box
                     sx={{
@@ -119,7 +119,7 @@ const StaffHead: FC = () => {
                     }}
                   >
                     <Typography variant="h4" sx={{ color: '#32dc88' }}>
-                      75%
+                      100%
                     </Typography>
                     <CircularProgress
                       sx={{ position: 'absolute', color: 'divider' }}
@@ -179,20 +179,26 @@ const StaffHead: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            We take hiring seriously and employ only high quality employees for our staff.(407.100)  Our staff undergo professional development training that exceeds the State of Illinois requirements. Most teachers gain ECE credentials within the first year of employment.
+              We take hiring seriously and employ only high quality employees for our staff.(407.100) Our staff undergo
+              professional development training that exceeds the State of Illinois requirements. Most teachers gain ECE
+              credentials within the first year of employment.
             </Typography>
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            Our Montessori teachers are known as directors and directress. They are trained and certified in an American Montessori Society program. They continue their training all year round to improve their knowledge to better impact the children in a positive way.
+              Our Montessori teachers are known as directors and directress. They are trained and certified in an
+              American Montessori Society program. They continue their training all year round to improve their
+              knowledge to better impact the children in a positive way.
             </Typography>
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            All are staff are CPR and First Aid trained.
+              All are staff are CPR and First Aid trained.
             </Typography>
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            We check professional references.   Based on state and/or local licensing requirements background checks are extensive which includes fingerprinting and appropriate criminal background checks, as well as, verification of educational credentials. Candidates who will transport children undergo a thorough driving history check and annual checks thereafter.
+              We check professional references. Based on state and/or local licensing requirements background checks are
+              extensive which includes fingerprinting and appropriate criminal background checks, as well as,
+              verification of educational credentials. Candidates who will transport children undergo a thorough driving
+              history check and annual checks thereafter.
             </Typography>
 
             {/* <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
@@ -231,44 +237,53 @@ const StaffHead: FC = () => {
             </Grid> */}
           </Grid>
         </Grid>
-        
-        
-        
+
         <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
-        <Container>
+          <Container>
             <Box
-            sx={{
+              sx={{
                 backgroundColor: 'secondary.main',
                 borderRadius: 10,
                 py: { xs: 4, md: 10 },
                 px: { xs: 4, md: 8 },
-                mt: { xs: -9},
+                mt: { xs: -9 },
                 textAlign: 'center',
-            }}
+              }}
             >
-            <Typography variant="h1" component="h2" sx={{ color: 'white', mb: 1, fontSize: { xs: 32, md: 42 } }}>
-            Role of a teacher
-            </Typography>
-            <Typography sx={{ color: 'white', mb: 6 }}>
-              The Montessori teacher serves as a link between the child and the environment. They better serve the children through observation and recording keeping of their growth and development.  The child is allowed to work and develop at his / her own pace. The teacher realizes the uniqueness of each child as an individual and the importance of respect.
-            </Typography>
-            <Typography sx={{ color: 'white', mb: 6 }}>
-            The Montessori materials are self-correcting, therefore; the teacher refrains from intervening in the child’s learning process and allows the child to discover and correct his or her own errors. The children’s growth comes from activities not from intellectual understanding. The Montessori teacher allows the child to develop physically, socially, emotionally, intellectually, and spiritually. The child’s work is measured against his/her own progress rather than compared to the achievement/ progress of others.
-            </Typography>
-            <Typography sx={{ color: 'white', mb: 6 }}>
-            The teacher is trained to pay close attention and to recognize periods of readiness. The teacher gives presentation using the three period lesson works to help the child along the path to understanding and mastery. The teacher checks to makes sure that the classroom material are safe and ready for use each day.
-            </Typography>
+              <Typography variant="h1" component="h2" sx={{ color: 'white', mb: 1, fontSize: { xs: 32, md: 42 } }}>
+                Role of a teacher
+              </Typography>
+              <Typography sx={{ color: 'white', mb: 6 }}>
+                The Montessori teacher serves as a link between the child and the environment. They better serve the
+                children through observation and recording keeping of their growth and development. The child is allowed
+                to work and develop at his / her own pace. The teacher realizes the uniqueness of each child as an
+                individual and the importance of respect.
+              </Typography>
+              <Typography sx={{ color: 'white', mb: 6 }}>
+                The Montessori materials are self-correcting, therefore; the teacher refrains from intervening in the
+                child’s learning process and allows the child to discover and correct his or her own errors. The
+                children’s growth comes from activities not from intellectual understanding. The Montessori teacher
+                allows the child to develop physically, socially, emotionally, intellectually, and spiritually. The
+                child’s work is measured against his/her own progress rather than compared to the achievement/ progress
+                of others.
+              </Typography>
+              <Typography sx={{ color: 'white', mb: 6 }}>
+                The teacher is trained to pay close attention and to recognize periods of readiness. The teacher gives
+                presentation using the three period lesson works to help the child along the path to understanding and
+                mastery. The teacher checks to makes sure that the classroom material are safe and ready for use each
+                day.
+              </Typography>
 
-            <Box
+              <Box
                 sx={{
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: { xs: 'column', md: 'row' },
-                justifyContent: 'space-around',
-                width: { xs: '100%', md: 560 },
-                mx: 'auto',
+                  display: 'flex',
+                  alignItems: 'center',
+                  flexDirection: { xs: 'column', md: 'row' },
+                  justifyContent: 'space-around',
+                  width: { xs: '100%', md: 560 },
+                  mx: 'auto',
                 }}
-            >
+              >
                 {/* <InputBase
                 sx={{
                     backgroundColor: 'background.paper',
@@ -282,15 +297,13 @@ const StaffHead: FC = () => {
                 placeholder="Enter your Email Address"
                 /> */}
                 <Box>
-                {/* <StyledButton disableHoverEffect size="large">
+                  {/* <StyledButton disableHoverEffect size="large">
                 Read more
                 </StyledButton> */}
-                 
                 </Box>
+              </Box>
             </Box>
-            </Box>
-        </Container>
-        
+          </Container>
         </Box>
       </Container>
     </Box>
