@@ -4,6 +4,7 @@ import InputBase from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
+import Link from 'next/link'
 
 const HomeNewsLetter: FC = () => {
   return (
@@ -19,9 +20,13 @@ const HomeNewsLetter: FC = () => {
           }}
         >
           <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-          Our Staff
+            Our Staff
           </Typography>
-          <Typography sx={{ mb: 6 }}>Our teachers are known as directors and directress. They are trained and certified in and American Montessori society program. They continue their training all year round to improve their knowledge to better impact the children in a positive way.</Typography>
+          <Typography sx={{ mb: 6 }}>
+            Our teachers are known as directors and directress. They are trained and certified in and American
+            Montessori society program. They continue their training all year round to improve their knowledge to better
+            impact the children in a positive way.
+          </Typography>
 
           <Box
             sx={{
@@ -46,9 +51,11 @@ const HomeNewsLetter: FC = () => {
               placeholder="Enter your Email Address"
             /> */}
             <Box>
-              <StyledButton disableHoverEffect size="large">
-               Read more
-              </StyledButton>
+              <Link href="/staff" passHref>
+                <StyledButton disableHoverEffect size="large">
+                  Read more
+                </StyledButton>
+              </Link>
             </Box>
           </Box>
         </Box>

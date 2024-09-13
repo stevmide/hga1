@@ -102,7 +102,6 @@ const HomeTestimonial: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              
             </Typography>
 
             <StyledSlickContainer>
@@ -115,7 +114,7 @@ const HomeTestimonial: FC = () => {
           </Grid>
           <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'block' } }}>
             <Box sx={{ width: { xs: '100%', md: '90%' } }}>
-              <Image src="/images/home-testimonial.png" width={520} height={540} quality={97} alt="Testimonial img" />
+              <Image src="/images/feat2.jpg" width={520} height={400} quality={97} alt="Testimonial img" />
             </Box>
           </Grid>
         </Grid>
