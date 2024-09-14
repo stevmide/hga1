@@ -102,7 +102,7 @@ const Contact: NextPageWithLayout = () => {
             <TextField id="outlined-textarea" label="Message" placeholder="How can we help?" multiline />
           </Box>
           <Link href="/thank" passHref>
-            <Button variant="contained">Submit</Button>
+            <Button variant="contained">Submit Form</Button>
           </Link>
         </Grid>
       </Grid>
