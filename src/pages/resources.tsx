@@ -5,12 +5,14 @@ import { MainLayout } from '@/components/layout'
 
 const DynamicHead = dynamic(() => import('../components/resources/head'))
 const DynamicResources = dynamic(() => import('../components/resources/resources'))
+const DynamicTabs = dynamic(() => import('../components/resources/tabs'))
 
 const Our: NextPageWithLayout = () => {
   return (
     <>
       <DynamicHead />
       <DynamicResources />
+      <DynamicTabs />
     </>
   )
 }

@@ -22,7 +22,7 @@ function thank() {
             Thank You
           </Typography>
           <Typography sx={{ color: 'white', mb: 6 }}>
-            <strong>Your form have been submitted. You have successfully schedule a tour</strong>
+            <strong>Your form has been submitted successfully.</strong>
           </Typography>
           <Link href="/" passHref>
             <Typography sx={{ color: 'white', mb: 6, cursor: 'pointer' }}>

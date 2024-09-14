@@ -189,16 +189,9 @@ const Admission: FC = () => {
                 Fill out this form to schedule a tour of our centers, all (*) fields are required.
               </Typography>
 
-              <Link href="/form" passHref>
-                <StyledButton
-                  disableHoverEffect={false}
-                  variant="outlined"
-                  sx={{ color: 'white', borderColor: 'white' }}
-                >
-                  Schedule a tour
-                </StyledButton>
+              <Link href="/thank" passHref>
+                <Button variant="contained">Schedule a tour</Button>
               </Link>
-
               <Box
                 sx={{
                   display: 'flex',
