@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 import ArtTrackIcon from '@mui/icons-material/ArtTrack'
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary'
-import ContactSupportIcon from '@mui/icons-material/ContactSupport'
 
 interface Data {
   title: string
@@ -26,5 +25,4 @@ export const data: Data[] = [
     description: 'We teach differently to different children, rather than maintain a one-size-fits-all approach',
     icon: <LocalLibraryIcon />,
   },
-  
 ]

@@ -5,12 +5,12 @@ import { useRouter } from 'next/router'
 import { navigations } from './navigation.data'
 
 const Navigation: FC = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
       {navigations.map(({ path: destination, label }) => {
-        const isActive = router.pathname === destination; // Check if the path is the current page
+        const isActive = router.pathname === destination // Check if the path is the current page
 
         return (
           <Box
@@ -56,17 +56,13 @@ const Navigation: FC = () => {
               </Box>
             </Link>
           </Box>
-        );
+        )
       })}
     </Box>
-  );
-};
+  )
+}
 
-export default Navigation;
-
-
-
-
+export default Navigation
 
 // import React, { FC } from 'react'
 // import Box from '@mui/material/Box'

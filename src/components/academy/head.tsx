@@ -1,43 +1,40 @@
 import React, { FC } from 'react'
 import Box from '@mui/material/Box'
-import InputBase from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
-import { spacing } from '@mui/system';
-
 
 const HomeNewsLetter: FC = () => {
   return (
     <>
-        <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
+      <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
         <Container>
-            <Box
+          <Box
             sx={{
-                backgroundColor: 'secondary.main',
-                borderRadius: 10,
-                py: { xs: 4, md: 10 },
-                px: { xs: 4, md: 8 },
-                mt: { xs: -9},
-                textAlign: 'center',
+              backgroundColor: 'secondary.main',
+              borderRadius: 10,
+              py: { xs: 4, md: 10 },
+              px: { xs: 4, md: 8 },
+              mt: { xs: -9 },
+              textAlign: 'center',
             }}
-            >
+          >
             <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-            Our Academy
+              Our Academy
             </Typography>
             <Typography sx={{ mb: 6 }}> We have the Aurora Academy and Oakbrook Terrace Academy</Typography>
 
             <Box
-                sx={{
+              sx={{
                 display: 'flex',
                 alignItems: 'center',
                 flexDirection: { xs: 'column', md: 'row' },
                 justifyContent: 'space-around',
                 width: { xs: '100%', md: 560 },
                 mx: 'auto',
-                }}
+              }}
             >
-                {/* <InputBase
+              {/* <InputBase
                 sx={{
                     backgroundColor: 'background.paper',
                     borderRadius: 3,
@@ -49,18 +46,16 @@ const HomeNewsLetter: FC = () => {
                 }}
                 placeholder="Enter your Email Address"
                 /> */}
-                <Box>
+              <Box>
                 <StyledButton disableHoverEffect size="large">
-                Read more
+                  Read more
                 </StyledButton>
-                </Box>
+              </Box>
             </Box>
-            </Box>
+          </Box>
         </Container>
-        </Box>
+      </Box>
     </>
-
-    
   )
 }
 

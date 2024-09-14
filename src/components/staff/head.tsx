@@ -7,8 +7,6 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import CircularProgress from '@mui/material/CircularProgress'
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
-import { data } from './head.data'
-import { StyledButton } from '../styled-button'
 
 interface LinearProgressProps {
   order: number

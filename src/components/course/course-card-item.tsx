@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
 import Box from '@mui/material/Box'
-import Rating from '@mui/material/Rating'
 import Typography from '@mui/material/Typography'
 import IconButton, { iconButtonClasses } from '@mui/material/IconButton'
 import { Course } from '@/interfaces/course'
@@ -48,16 +47,12 @@ const CourseCardItem: FC<Props> = ({ item }) => {
           <Typography component="h2" variant="h5" sx={{ mb: 2, height: 56, overflow: 'hidden', fontSize: '1.2rem' }}>
             {item.title}
           </Typography>
-          
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          
           <IconButton
             color="primary"
             sx={{ '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' } }}
-          >
-          
-          </IconButton>
+          ></IconButton>
         </Box>
       </Box>
     </Box>

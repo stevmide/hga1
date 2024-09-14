@@ -6,7 +6,6 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '@/components/styled-button'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
 interface Exp {
   label: string
@@ -15,21 +14,6 @@ interface Exp {
 interface ExpItemProps {
   item: Exp
 }
-
-const exps: Array<Exp> = [
-  {
-    label: 'Students',
-    value: '10K+',
-  },
-  {
-    label: 'Quality Course',
-    value: '20+',
-  },
-  {
-    label: 'Experience Mentors',
-    value: '10+',
-  },
-]
 
 const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
