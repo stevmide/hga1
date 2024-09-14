@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logoimage from '../logo/hga.png'
+import logoimage from '../logo/logo.jpg'
 
 function logo() {
   return (
@@ -8,7 +8,7 @@ function logo() {
       <Image
         src={logoimage}
         alt="logo"
-        width={100}
+        width={150}
         height={100}
         // You can add more props here as needed
       />

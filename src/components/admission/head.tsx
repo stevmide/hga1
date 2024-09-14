@@ -20,7 +20,7 @@ const Head: FC = () => {
       >
         {/* Background Image */}
         <Image
-          src="/images/feat3.jpg"
+          src="/images/adm.jpg"
           alt="Resources background"
           layout="fill"
           objectFit="cover"
@@ -51,7 +51,7 @@ const Head: FC = () => {
             }}
           >
             <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-              Resources
+              Admission
             </Typography>
             <Typography sx={{ mb: 6, fontSize: { xs: 28, md: 38 } }}>
               {/* Add your subtitle here if needed */}
