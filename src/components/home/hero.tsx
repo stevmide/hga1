@@ -7,30 +7,6 @@ import Typography from '@mui/material/Typography'
 import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '@/components/styled-button'
 
-interface Exp {
-  label: string
-  value: string
-}
-interface ExpItemProps {
-  item: Exp
-}
-
-const ExpItem: FC<ExpItemProps> = ({ item }) => {
-  const { value, label } = item
-  return (
-    <Box sx={{ textAlign: 'center', mb: { xs: 1, md: 0 } }}>
-      <Typography
-        sx={{ color: 'secondary.main', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
-      >
-        {value}
-      </Typography>
-      <Typography color="text.secondary" variant="h5">
-        {label}
-      </Typography>
-    </Box>
-  )
-}
-
 const HomeHero: FC = () => {
   return (
     <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>

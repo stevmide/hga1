@@ -1,5 +1,4 @@
 import React from 'react'
-import theme from '@/config/theme'
 import { NextComponentType } from 'next'
 import { AppInitialProps } from 'next/app'
 import { EmotionCache } from '@emotion/cache'
@@ -9,11 +8,11 @@ import { AppContextType, AppPropsType } from 'next/dist/shared/lib/utils'
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 
 interface DocumentProps {
-  emotionStylesTags: any[]
+  emotionStylesTags: string[]
 }
 
 class MyDocument extends Document<DocumentProps> {
-  render(): any {
+  render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>

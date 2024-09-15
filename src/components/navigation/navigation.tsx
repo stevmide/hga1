@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import Box from '@mui/material/Box'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { navigations } from './navigation.data'
 
@@ -50,7 +51,7 @@ const Navigation: FC = () => {
                     '& img': { width: 44, height: 'auto' },
                   }}
                 >
-                  <img src="/images/headline-curve.svg" alt="Headline curve" />
+                  <Image src="/images/headline-curve.svg" alt="Headline curve" width={20} height={20} />
                 </Box>
                 {label}
               </Box>

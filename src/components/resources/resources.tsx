@@ -2,14 +2,8 @@ import React, { FC } from 'react'
 import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import { styled } from '@mui/material/styles'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
-
-interface LinearProgressProps {
-  order: number
-}
 
 const Resources: FC = () => {
   return (
