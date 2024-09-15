@@ -51,7 +51,7 @@ const Navigation: FC = () => {
                     '& img': { width: 44, height: 'auto' },
                   }}
                 >
-                  <Image src="/images/headline-curve.svg" alt="Headline curve" width={20} height={20} />
+                  <Image src="/images/headline-curve.svg" alt="Headline curve" width={40} height={30} />
                 </Box>
                 {label}
               </Box>

@@ -125,6 +125,9 @@ const Resources: FC = () => {
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
               <a href="https://www.keepandshare.com/doc20/26353/january-newsletter-2023-pdf-692k?da=y"> Latest News</a>
             </Typography>
+            <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
+              <a href="http://localhost:3000/gallery"> Our Gallery</a>
+            </Typography>
           </Grid>
         </Grid>
 
