@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import logoimage from '../logo/logo.jpg'
 
 function logo() {
   return (
     <>
       <Image
-        src={logoimage}
+        src="/images/logo.jpg"
         alt="logo"
         width={150}
         height={100}
