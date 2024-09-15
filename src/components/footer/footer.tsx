@@ -16,10 +16,11 @@ const Footer: FC = () => {
           <Grid item xs={12} md={5}>
             <Box sx={{ width: { xs: '100%', md: 360 }, mb: { xs: 3, md: 0 } }}>
               <Typography component="h2" variant="h2" sx={{ mb: 2 }}>
-                His Grace Christain Academy
+                His Grace Christian Academy
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-              His Grace Academy has an inclusive educational program. All children can learn and therefore should have the opportunity to benefit from a diverse educational experience.
+                His Grace Academy has an inclusive educational program. All children can learn and therefore should have
+                the opportunity to benefit from a diverse educational experience.
               </Typography>
               <FooterSocialLinks />
             </Box>
