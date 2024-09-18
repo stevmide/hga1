@@ -19,8 +19,8 @@ const Footer: FC = () => {
                 His Grace Christian Academy
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                His Grace Academy has an inclusive educational program. All children can learn and therefore should have
-                the opportunity to benefit from a diverse educational experience.
+                His Grace Christain Academy has an inclusive educational program. All children can learn and therefore
+                should have the opportunity to benefit from a diverse educational experience.
               </Typography>
               <FooterSocialLinks />
             </Box>

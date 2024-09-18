@@ -20,11 +20,11 @@ const Head: FC = () => {
             </Typography>
             <Typography sx={{ mb: 6, fontSize: { xs: 28, md: 38 } }}> </Typography>
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-              His Grace Academy has an inclusive educational program. All children can learn and therefore should have
-              the opportunity to benefit from a diverse educational experience. Individual difference makes each of us
-              unique beings; through inclusion, all children in an accepting and developmentally appropriate environment
-              can experience these differences. “Growth comes from activity, not from intellectual understanding.”,
-              Maria Montessori.
+              His Grace Christain Academy has an inclusive educational program. All children can learn and therefore
+              should have the opportunity to benefit from a diverse educational experience. Individual difference makes
+              each of us unique beings; through inclusion, all children in an accepting and developmentally appropriate
+              environment can experience these differences. “Growth comes from activity, not from intellectual
+              understanding.”, Maria Montessori.
             </Typography>
 
             <Box
