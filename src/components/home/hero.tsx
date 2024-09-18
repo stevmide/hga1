@@ -92,13 +92,13 @@ const HomeHero: FC = () => {
                     </svg>
                   </Typography>{' '}
                   <br />
-                  His Grace Academy
+                  His Grace Christian Academy
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    'His Grace Academy has an inclusive educational program.  All children can learn and therefore should have the opportunity to benefit from a diverse educational experience.'
+                    'His Grace Christian Academy has an inclusive educational program.  All children can learn and therefore should have the opportunity to benefit from a diverse educational experience.'
                   }
                 </Typography>
               </Box>
