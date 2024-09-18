@@ -6,28 +6,13 @@ import { SocialLink } from '@/interfaces/social-link'
 export const socialLinks: SocialLink[] = [
   {
     name: 'Instagram',
-    link: '#',
-    icon: '/images/icons/instagram.svg',
+    link: 'https://www.facebook.com/profile.php?id=100063551414320&mibextid=LQQJ4d',
+    icon: '/images/icons/facebook.svg',
   },
   {
     name: 'YouTube',
-    link: '#',
-    icon: '/images/icons/youtube.svg',
-  },
-  {
-    name: 'Twitter',
-    link: '#',
-    icon: '/images/icons/twitter.svg',
-  },
-  {
-    name: 'Dribbble',
-    link: 'https://dribbble.com/shots/18114471-Coursespace-Online-Course-Landing-Page',
-    icon: '/images/icons/dribbble.svg',
-  },
-  {
-    name: 'Github',
-    link: 'https://github.com/hiriski/coursespace-landing-page',
-    icon: '/images/icons/github.svg',
+    link: 'https://www.instagram.com/hisgracechristian?igsh=azlid2RtMGN1MnFv',
+    icon: '/images/icons/instagram.svg',
   },
 ]
 
