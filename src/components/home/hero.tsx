@@ -4,7 +4,7 @@ import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import { Link as ScrollLink } from 'react-scroll'
+import Link from 'next/link'
 import { StyledButton } from '@/components/styled-button'
 
 const HomeHero: FC = () => {
@@ -103,16 +103,15 @@ const HomeHero: FC = () => {
                 </Typography>
               </Box>
               <Box sx={{ '& button': { mr: 2 } }}>
-                <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="contained">
-                    Admission
+                <Link href="/admission" passHref>
+                  <StyledButton disableHoverEffect={true}>Admission</StyledButton>
+                </Link>
+
+                <Link href="/form" passHref>
+                  <StyledButton disableHoverEffect={true} variant="outlined">
+                    Schecdule a tour
                   </StyledButton>
-                </ScrollLink>
-                <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="outlined">
-                    Schedule a tour
-                  </StyledButton>
-                </ScrollLink>
+                </Link>
               </Box>
             </Box>
           </Grid>

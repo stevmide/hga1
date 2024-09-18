@@ -7,10 +7,10 @@ function logo() {
     <>
       <Link href="/" passHref>
         <Image
-          src="/images/logo.jpg"
+          src="/images/Logo_hga.jpg"
           alt="logo"
-          width={150}
-          height={100}
+          width={155}
+          height={150}
           style={{ cursor: 'pointer' }}
           // You can add more props here as needed
         />

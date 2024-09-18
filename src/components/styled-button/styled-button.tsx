@@ -10,6 +10,7 @@ interface BaseButtonProps extends Pick<ButtonProps, 'onClick' | 'type' | 'startI
   color?: 'default' | 'primary' | 'secondary' | 'dark' | 'light'
   size?: 'small' | 'medium' | 'large'
   disableHoverEffect?: boolean
+  href?: string
 }
 interface StyledButtonRootProps extends BaseButtonProps {
   theme?: Theme

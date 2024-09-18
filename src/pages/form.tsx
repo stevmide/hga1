@@ -1,13 +1,29 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
-import { useState } from 'react'
+import { useState, ChangeEvent } from 'react'
 import Link from 'next/link'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { MenuItem, FormControl, InputLabel, Select, SelectChangeEvent } from '@mui/material'
 
-function Form() {
+const Form: React.FC = () => {
+  const [location, setLocation] = useState('') // Move useState inside the component
+  const [program, setProgram] = useState('') // Add state for the program select
+
+  interface FormData {
+    fullname: string
+    email: string
+    telephone: string
+    childsname: string
+    noofkids: string
+    dob: string
+    date: string
+    time: string
+    message: string
+    [key: string]: string // This allows for additional string-based keys
+  }
+
   const categoryDB = [
     { label: 'Aurora', value: 1 },
     { label: 'Oakbrook Terrace', value: 2 },
@@ -21,9 +37,34 @@ function Form() {
     { label: 'School Age', value: 5 },
   ]
 
-  const [location, setLocation] = useState('')
-  const handleChange = (event: SelectChangeEvent) => {
+  const [formData, setFormData] = useState<FormData>({
+    fullname: '',
+    email: '',
+    telephone: '',
+    childsname: '',
+    noofkids: '',
+    dob: '',
+    date: '',
+    time: '',
+    message: '',
+  })
+
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement> | SelectChangeEvent<string>
+  ) => {
+    const { name, value } = event.target
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }))
+  }
+
+  const handleLocationChange = (event: SelectChangeEvent) => {
     setLocation(event.target.value)
+  }
+
+  const handleProgramChange = (event: SelectChangeEvent) => {
+    setProgram(event.target.value)
   }
 
   return (
@@ -52,7 +93,7 @@ function Form() {
           labelId="location-label"
           id="location-select"
           value={location}
-          onChange={handleChange}
+          onChange={handleLocationChange} // Use a dedicated handler for location
           label="Select HGA location of Interest"
         >
           {categoryDB.map((option) => (
@@ -63,14 +104,56 @@ function Form() {
         </Select>
       </FormControl>
 
-      <TextField id="outlined-basic" label="Full Name" variant="outlined" fullWidth />
-      <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
-      <TextField id="outlined-basic" label="Telephone" variant="outlined" fullWidth />
-      <TextField id="outlined-basic" label="Child's Name" variant="outlined" fullWidth />
-      <TextField id="outlined-basic" label="No. of Kids" variant="outlined" fullWidth />
+      <TextField
+        id="outlined-basic"
+        value={formData.fullname}
+        onChange={handleChange}
+        label="Full Name"
+        variant="outlined"
+        fullWidth
+        name="fullname"
+      />
+      <TextField
+        id="outlined-basic"
+        value={formData.email}
+        onChange={handleChange}
+        label="Email"
+        variant="outlined"
+        fullWidth
+        name="email"
+      />
+      <TextField
+        id="outlined-basic"
+        value={formData.telephone}
+        onChange={handleChange}
+        label="Telephone"
+        variant="outlined"
+        fullWidth
+        name="telephone"
+      />
+      <TextField
+        id="outlined-basic"
+        value={formData.childsname}
+        onChange={handleChange}
+        label="Child's Name"
+        variant="outlined"
+        fullWidth
+        name="childsname"
+      />
+      <TextField
+        id="outlined-basic"
+        value={formData.noofkids}
+        onChange={handleChange}
+        label="No. of Kids"
+        variant="outlined"
+        fullWidth
+        name="noofkids"
+      />
 
       <TextField
         id="date"
+        value={formData.dob}
+        onChange={handleChange}
         label="Child's Birthday"
         type="date"
         variant="outlined"
@@ -82,6 +165,7 @@ function Form() {
           min: '2000-01-01',
           max: '2025-12-31',
         }}
+        name="dob"
       />
 
       <FormControl fullWidth variant="outlined">
@@ -89,8 +173,8 @@ function Form() {
         <Select
           labelId="program-label"
           id="program-select"
-          value={location}
-          onChange={handleChange}
+          value={program} // Use separate state for program
+          onChange={handleProgramChange} // Use a dedicated handler for program
           label="Select Program of Interest"
         >
           {categoryXY.map((option) => (
@@ -103,6 +187,8 @@ function Form() {
 
       <TextField
         id="date-of-visit"
+        value={formData.date}
+        onChange={handleChange}
         label="Date of Visit"
         type="date"
         variant="outlined"
@@ -114,10 +200,13 @@ function Form() {
           min: '2000-01-01',
           max: '2025-12-31',
         }}
+        name="date"
       />
 
       <TextField
         id="time"
+        value={formData.time}
+        onChange={handleChange}
         label="Time (opening hours 06:30 to 17:30)"
         type="time"
         variant="outlined"
@@ -128,12 +217,24 @@ function Form() {
         inputProps={{
           step: 300, // 5 minutes interval (optional)
         }}
+        name="time"
       />
 
-      <TextField id="outlined-multiline-flexible" label="Interest" multiline maxRows={4} fullWidth />
+      <TextField
+        id="outlined-multiline-flexible"
+        value={formData.message}
+        onChange={handleChange}
+        label="Interest"
+        multiline
+        maxRows={4}
+        fullWidth
+        name="message"
+      />
 
       <Link href="/thank" passHref>
-        <Button variant="contained">Submit</Button>
+        <Button variant="contained" type="submit">
+          Submit
+        </Button>
       </Link>
     </Box>
   )
