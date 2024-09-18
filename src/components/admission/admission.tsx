@@ -158,7 +158,7 @@ const Admission: FC = () => {
                 Fill out this form to schedule a tour of our centers, all (*) fields are required.
               </Typography>
 
-              <Link href="/thank" passHref>
+              <Link href="/form" passHref>
                 <Button variant="contained">Schedule a tour</Button>
               </Link>
               <Box
