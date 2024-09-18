@@ -32,10 +32,10 @@ const courseMenu: Array<Navigation> = [
 const pageMenu = headerNavigations
 
 const companyMenu: Array<Navigation> = [
-  { label: 'Contact Us', path: '#' },
+  { label: 'Contact Us', path: '/contact' },
   // { label: 'Privacy & Policy', path: '#' },
-  // { label: 'Term & Condition', path: '#' },
-  { label: 'FAQ', path: '#' },
+  //  { label: 'Term & Condition', path: '#' },
+  // { label: 'FAQ', path: '#' },
 ]
 
 interface NavigationItemProps {

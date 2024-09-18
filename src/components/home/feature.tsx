@@ -181,8 +181,8 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-              His Grace Academy is a diverse community of educators. We pride ourselves in the uniqueness of culture and
-              the love of individuality.
+              His Grace Christain Academy is a diverse community of educators. We pride ourselves in the uniqueness of
+              culture and the love of individuality.
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
